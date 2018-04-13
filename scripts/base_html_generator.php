@@ -14,7 +14,6 @@ function generate_html_head($bootstrap_cdn, $title) {
             <title>'.$title.'</title>
         </head>
         <body>';
-
 }
 
 function generate_html_tail(){
