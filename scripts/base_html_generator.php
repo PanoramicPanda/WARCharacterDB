@@ -1,6 +1,7 @@
 <?php
 
-function generate_html_head($bootstrap_cdn, $title) {
+function generate_html_head($title) {
+    $bootstrap_cdn = $_SESSION['bootstrap_cdn'] ?? 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
     echo '<!doctype html>
     <html lang="en">
         <head>
