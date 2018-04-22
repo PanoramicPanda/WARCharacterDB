@@ -16,12 +16,14 @@ function generate_html_head($title) {
             <title>'.$title.'</title>
         </head>
         <body>
-            <div class="col-lg-10 offset-lg-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
         ';
 }
 
 function generate_html_tail(){
-    echo '</div>
+    echo '</div></div></div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

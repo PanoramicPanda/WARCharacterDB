@@ -1,6 +1,6 @@
 <?php
 
-function generate_bootstrap_navbar(){
+function generate_bootstrap_navbar($active_page){
     $logged_in = $_SESSION['logged_in'] ?? false;
 
     #======= Nav Element Construction =======
@@ -13,7 +13,15 @@ function generate_bootstrap_navbar(){
 
     #======= Left Side Nav =======
 
-    $navbar .= '<ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="#">Test</a></li>';
+    $navbar .= '<ul class="navbar-nav mr-auto">';
+
+
+    $navbar .= '<li class="nav-item"><a class="nav-link';
+    if ($active_page == 'Index'){
+        $navbar.= ' active';
+    }
+    $navbar .= '" href="/WAR/">Home</a></li>';
+
 
     $navbar .= '</ul>';
 
@@ -56,8 +64,8 @@ function navbar_login($logged_in){
                                             <input type="checkbox" class="form-check-input" id="remember_check">
                                             <label class="form-check-label" for="remember_check">Remember Me</label>
                                         </div>        
-                                        <div class="dropdown-divider"></div>                                 
-                                        <button type="submit" class="btn btn-outline-secondary btn-sm btn-block">Register</button>                   
+                                        <div class="dropdown-divider"></div>         
+                                        <a href="/WAR/registration/" class="btn btn-outline-secondary btn-sm btn-block" role="button" aria-disabled="true">Register</a>                                      
                                     </form>                
                               </div>
                           </li>';
