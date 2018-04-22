@@ -5,7 +5,7 @@ function generate_bootstrap_navbar(){
 
     #======= Nav Element Construction =======
 
-    $navbar = '<nav class="navbar navbar-dark navbar-expand-lg bg-dark py-2">
+    $navbar = '<nav class="navbar navbar-dark navbar-expand-lg bg-dark my-2 py-2">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
