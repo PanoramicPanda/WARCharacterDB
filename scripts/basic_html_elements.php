@@ -5,7 +5,7 @@ function generate_bootstrap_navbar(){
 
     #======= Nav Element Construction =======
 
-    $navbar = '<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    $navbar = '<nav class="navbar navbar-dark navbar-expand-lg bg-dark py-2">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -44,7 +44,7 @@ function navbar_login($logged_in){
                                 Login
                               </button>
                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="login_menu">
-                                    <form class="px-4 py-3">
+                                    <form class="px-3 py-2">
                                         <div class="form-group">
                                             <label for="login_email">Email Address</label>
                                             <input type="email" class="form-control" id="login_email" placeholder="Enter Email">
