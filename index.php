@@ -9,7 +9,7 @@ generate_bootstrap_navbar(); ?>
     <div class="card-header">
         Test
     </div>
-    <div class="card-body"
+    <div class="card-body">
          Derp
     </div>
 </div>
